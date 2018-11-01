@@ -25,3 +25,10 @@ The `indigo-devel` branch is the stable branch; only bug fixes are accepted on t
 The `master` branch is currently considered the development branch, and is released into ROS Kinetic with version numbers in the 0.3.x range. `master` is accepting new, non-breaking features and bug fixes.
 
 Large, breaking changes such as changes to dependencies or the package API will be considered, but they will probably be staged into a development branch for release into the next major release of ROS (ROS L)
+
+# Dependencies
+- Gstreamer
+  Using the blow command to install the gstreamer and its plugin
+  ```
+  sudo apt install gstreamer0.10-plugins-*
+  ```

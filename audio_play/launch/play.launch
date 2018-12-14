@@ -1,5 +1,5 @@
 <launch>
-  <arg name="ns" default="audio"/>
+  <arg name="ns" default="audio2"/>
   <arg name="dst" default="alsasink"/>
 
   <group ns="$(arg ns)">

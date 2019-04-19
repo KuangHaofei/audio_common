@@ -1,0 +1,4 @@
+<launch>
+	<include  file="$(find audio_capture)/launch/capture_robot.launch"/>
+	<include  file="$(find audio_play)/launch/play_robot.launch"/>
+</launch>

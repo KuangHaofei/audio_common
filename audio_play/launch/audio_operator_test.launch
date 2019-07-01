@@ -1,0 +1,4 @@
+<launch>
+	<include  file="$(find audio_capture)/launch/capture_operator_test.launch"/>
+	<include  file="$(find audio_play)/launch/play_operator.launch"/>
+</launch>

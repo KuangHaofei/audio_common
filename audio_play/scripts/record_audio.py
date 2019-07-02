@@ -1,7 +1,4 @@
 #!/usr/bin/env python
-import numpy as np
-import sounddevice as sd
-
 import rospy
 import os
 

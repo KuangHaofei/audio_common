@@ -1,9 +1,9 @@
 <launch>
   <arg name="device" default=""/>
   <arg name="channels" default="1"/>
-  <arg name="sample_rate" default="16000"/>
-  <arg name="dst" default="/tmp/output.mp3"/>
-  <arg name="format" default="mp3"/>
+  <arg name="sample_rate" default="24000"/>
+  <arg name="dst" default="/home/rescue/Music/output.wave"/>
+  <arg name="format" default="wave"/>
   <arg name="ns" default="audio"/>
 
   <group ns="$(arg ns)">

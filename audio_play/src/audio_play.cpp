@@ -21,7 +21,7 @@ namespace audio_transport
         ros::param::param<std::string>("~dst", dst_type, "alsasink");
         ros::param::param<std::string>("~device", device, std::string());
 
-        _sub = _nh.subscribe("audio", 100, &RosGstPlay::onAudio, this);
+        _sub = _nh.subscribe("audio", 10, &RosGstPlay::onAudio, this);
 
         _loop = g_main_loop_new(NULL, false);
 

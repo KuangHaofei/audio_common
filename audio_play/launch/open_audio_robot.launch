@@ -1,10 +1,10 @@
 <launch>
-  <arg name="ns" default="audio2"/>
+  <arg name="ns" default="robot"/>
   <arg name="dst" default="alsasink"/>
 
   <group ns="$(arg ns)">
       <node name="audio_record" pkg="audio_play" type="record_audio.py" output="screen">
-          <param name="host" value="192.168.43.79"/>
+          <param name="host" value="192.168.1.11"/>
           <param name="port" value="4001"/>
       </node>
 

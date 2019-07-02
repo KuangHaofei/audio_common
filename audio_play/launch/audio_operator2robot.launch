@@ -1,0 +1,17 @@
+<launch>
+
+    <arg name="dst" default="alsasink"/>
+
+    <group ns="operator">
+        <node name="audio_record_operator" pkg="audio_play" type="record_audio.py" output="screen">
+            <param name="host" value="192.168.1.11"/>
+            <param name="port" value="5001"/>
+        </node>
+    </group>
+
+    <group ns="robot">
+        <node name="audio_play_operator" pkg="audio_play" type="play_audio.py" output="screen">
+            <param name="port" value="4001"/>
+        </node>
+    </group>
+</launch>
